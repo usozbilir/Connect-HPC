@@ -146,7 +146,7 @@ miniconda_setup
 conda activate new
 ```
 
-If it is your first time with a notebook in Recas use
+in Recas every time use:
 
 ```bash
 jupyter notebook --generate-config
