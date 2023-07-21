@@ -3,7 +3,7 @@
 Connect to the frontend
 
 ```bash 
-ssh adrianodif@recas.ba.infn.it
+ssh usozbilir@recas.ba.infn.it
 ```
 
 and in the terminal just use
@@ -54,7 +54,7 @@ miniconda_setup
 from now on you will see this in your shell
 
 ```bash
-(base) [adrianodif@ui03 ~]$ 
+(base) [usozbilir@ui03 ~]$ 
 ```
 
 that means that your conda *base* environment is active. Just to be safe run
@@ -136,7 +136,7 @@ condor_submit job -interactive
 This will let you in a machine with a GPU, 1 CPU reserved to you and 4096MB of memory. E.g., I’ve had acess to `wn-gpu-8-3-22`
 
 ```bash
-[adrianodif@wn-gpu-8-3-22 ~]$ 
+[usozbilir@wn-gpu-8-3-22 ~]$ 
 ```
 
 And I start my notebeook here.
@@ -171,13 +171,13 @@ In this case since the frontend is quite crowded try to use an unique numeber (e
 
 Last step. On you local machine open a terminal and open a tunnel to the frontend
 ```bash
-ssh -L 2812:localhost:2812 -N -f adrianodif@ui03.recas.ba.infn.it
+ssh -L 2811:localhost:2812 -N -f usozbilir@ui03.recas.ba.infn.it
 ```
 Note that you have to adjust ui02 or ui03 depending on the frontend machine you ended up.
 
 Now if you open, with any browser, the
 
-http://localhost:2812
+http://localhost:2811
 
 And you will see something like:
 
