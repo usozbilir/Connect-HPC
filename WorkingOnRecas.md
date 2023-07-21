@@ -167,7 +167,7 @@ So on a new terminal you need to access the frontend and open a tunnel from the 
 ```bash
 ssh -N -f -L localhost:2812:localhost:8000 hpc-gpu-1-4-1
 ```
-In this case since the frontend is quite crowded try to use an unique numeber (e.g. your birthday as I did here).  If the port is not free ssh will warn you and you will have to change it. This step is needed since the machines on the HPC are not reacheable directly but only through the ui02/ui03 bastions.
+In this case since the frontend is quite crowded try to use an unique numeber (not start with 0, give random number).  If the port is not free ssh will warn you and you will have to change it. This step is needed since the machines on the HPC are not reacheable directly but only through the ui02/ui03 bastions.
 
 Last step. On you local machine open a terminal and open a tunnel to the frontend
 ```bash
