@@ -120,7 +120,7 @@ echo "output=out
 error=err
 log=log
 
-request_cpus=1
+request_cpus=32
 request_memory=4096 
 
 rank=Memory
@@ -165,19 +165,19 @@ note that if the port is not available jupyter will warn you that it has moved t
 
 So on a new terminal you need to access the frontend and open a tunnel from the frontend to that machine:
 ```bash
-ssh -N -f -L localhost:2812:localhost:8000 hpc-gpu-1-4-1
+ssh -N -f -L localhost:1812:localhost:8000 wn-gpu-7-9-30
 ```
 In this case since the frontend is quite crowded try to use an unique numeber (not start with 0, give random number).  If the port is not free ssh will warn you and you will have to change it. This step is needed since the machines on the HPC are not reacheable directly but only through the ui02/ui03 bastions.
 
 Last step. On you local machine open a terminal and open a tunnel to the frontend
 ```bash
-ssh -L 2811:localhost:2812 -N -f usozbilir@ui03.recas.ba.infn.it
+ssh -L 1137:localhost:1812 -N -f usozbilir@ui02.recas.ba.infn.it
 ```
 Note that you have to adjust ui02 or ui03 depending on the frontend machine you ended up.
 
 Now if you open, with any browser, the
 
-http://localhost:2811
+http://localhost:1137
 
 And you will see something like:
 
