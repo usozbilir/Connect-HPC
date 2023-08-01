@@ -136,7 +136,7 @@ condor_submit job -interactive
 This will let you in a machine with a GPU, 1 CPU reserved to you and 4096MB of memory. E.g., I’ve had acess to `wn-gpu-8-3-22`
 
 ```bash
-[usozbilir@wn-gpu-8-3-22 ~]$ 
+[usozbilir@wn-gpu-7-9-30 ~]$ 
 ```
 
 And I start my notebeook here.
