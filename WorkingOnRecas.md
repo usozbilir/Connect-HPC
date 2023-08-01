@@ -106,7 +106,7 @@ output=out #output of your job will be written here
 error=err #errors 
 log=log #log of condor_submit
 
-request_cpus=1
+request_cpus=32
 request_memory=4096 #in MB
 
 rank=Memory
